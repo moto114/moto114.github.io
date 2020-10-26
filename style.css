@@ -1,0 +1,23 @@
+h4 {
+  position: relative;
+  text-align: center;
+}
+h4 span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0 2.5em;
+  padding: 0 1em;
+  background-color: #fff;
+  text-align: left;
+}
+h4::before {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+}
